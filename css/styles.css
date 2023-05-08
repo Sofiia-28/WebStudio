@@ -103,9 +103,6 @@ img {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid fuchsia;
-  outline-offset: -2px;
 }
 /* Tablet */
 @media screen and (min-width:768px) {
@@ -283,11 +280,66 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/section_hero/people-office.jpg);
+    url(../images/section_hero/people-office_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section_hero/people-office_mob@2x.jpg);
+  }
+}
+/* Tablet */
+@media screen and (min-width:429px) and (max-width:768px){
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section_hero/people-office_tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section_hero/people-office_tab@2x.jpg);
+  }
+}
+}
+/* Desktop */
+@media screen and (min-width:769px){
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section_hero/people-office_desk.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section_hero/people-office_desk@2x.jpg);
+  }
+}
+}
+
+
 
 .hero-title {
   /* Phone */
@@ -974,12 +1026,12 @@ img {
   color: var(--navy-blue);
 }
 .portfolio-card-list-item {
-  width: calc((100% - 48px) / 1);
+  width: 100%;
 }
 /* Tablet */
 @media screen and (min-width:768px){
   .portfolio-card-list-item {
-    width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 }
 /* Desktop */
@@ -1005,6 +1057,11 @@ img {
 
   background-color: var(--iris);
   transition: transform var(--anim);
+}
+@media screen and (max-width:1157px){
+  .overlay {
+    display: none;
+  }
 }
 .overlay-label {
   color: var(--cloud);
