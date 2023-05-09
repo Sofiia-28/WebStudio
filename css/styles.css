@@ -271,7 +271,7 @@ img {
 
 /* Hero image */
 .hero {
-  padding: 112px 0px;
+  padding: 188px 0px;
   margin: auto;
   max-width: 1440px;
 
@@ -285,13 +285,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-/* Desktop */
-@media screen and (min-width:1158px){
-  .hero {
-    padding: 188px 0px;
-  }
-}
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -855,7 +848,7 @@ img {
 }
 
 .subscribe-input {
-  width: 100%;
+  width: 396px;
   height: 40px;
   padding: 8px 16px;
 
