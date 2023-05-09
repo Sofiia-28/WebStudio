@@ -1381,20 +1381,26 @@ img {
 
   background: var(--cornflower);
 
-  border: 1px solid var(--navy-blue);
-  opacity: 0.1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1;
 
   transition: background-color var(--anim);
 }
 .menu-icon-close {
   transition: fill var(--anim);
 }
-.icon-close {
-  z-index: 2;
-  opacity: 1;
+.menu-toggle-close:hover {
+  background-color: var(--ocean);
+}
+.menu-toggle-close:focus {
+  background-color: var(--ocean);
+}
+.menu-toggle-close:hover .menu-icon-close {
+  fill: var(--white);
+}
+.menu-toggle-close:focus .menu-icon-close {
+  fill: var(--white);
 }
 
 .mobile-menu {
@@ -1455,6 +1461,12 @@ img {
   display: flex;
   gap: 56px;
   justify-content: center;
+}
+/* Phone < 428 */
+@media screen and (max-width:427px){
+  .mobile-menu-socials {
+    gap: 36px;
+  }
 }
 .mobile-menu-socials-link {
   display: flex;
