@@ -761,7 +761,6 @@ img {
 @media screen and (min-width: 1158px) {
   .footer-logo {
     margin-right: auto;
-    padding: 24px 0 22px;
   }
 }
 .footer-studio {
@@ -838,6 +837,15 @@ img {
 }
 
 /* Footer subcribe */
+/* Phone*/
+@media screen and (max-width: 767px) {
+  .subscribe-form {
+    width: 100%;
+  }
+  .subscribe-form label {
+    width: 100%;
+  }
+}
 .subscribe-wrapper {
   /* Phone */
   display: flex;
